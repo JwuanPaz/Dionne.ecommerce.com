@@ -7,7 +7,7 @@
 <body class="bg-yellow-50 font-sans">
 
     <nav class="p-6 flex justify-between items-center bg-white shadow-sm">
-        <h1 class="text-2xl font-bold text-yellow-500">TWEETY</h1>
+        <h1 class="text-2xl font-bold text-yellow-500">Dionne</h1>
         <div class="space-x-6">
             <a href="#" class="hover:text-yellow-600">Shop</a>
             <a href="#" class="hover:text-yellow-600">About</a>
@@ -30,4 +30,5 @@
         </section>
 
 </body>
+
 </html>
