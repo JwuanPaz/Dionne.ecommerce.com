@@ -1,0 +1,80 @@
+/* Tweety's Brand Variables */
+:root {
+    --primary-yellow: #FFFC9B;
+    --accent-gold: #FACC15;
+    --sky-blue: #BAE6FD;
+    --charcoal: #1F2937;
+    --soft-white: #FAFAFA;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--soft-white);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-placeholder {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--sky-blue);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Button Animations */
+.btn-primary {
+    background-color: var(--charcoal);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    color: var(--charcoal);
+}
+
+/* Cart Sidebar (Hidden by default) */
+.cart-drawer {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    z-index: 1000;
+    padding: 2rem;
+}
+
+.cart-drawer.open {
+    right: 0;
+}
